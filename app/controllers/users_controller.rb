@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      session[:author_id] = @user.id
+      session[:user_id] = @user.id
       flash[:success] = "Welcome to Expense Tracker #{@user.username}"
       redirect_to root_path
     else
@@ -15,6 +15,21 @@ class UsersController < ApplicationController
       render :new
     end
   end
+
+  # def show
+  #   redirect_to root_path if session[:user_id].nil?
+  #   @user = User.find(user_params)
+  # end
+
+  # def update
+  #   @user = User.find(user_params)
+  #   @user.update(user_params)
+  #   redirect_to user_path(@user)
+  # end
+
+  # def edit
+  #   @user = User.find(user_params)
+  # end
 
   private
 
