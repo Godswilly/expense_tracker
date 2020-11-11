@@ -1,0 +1,22 @@
+
+<h1 class="text-center text-primary">Sign up for Group Our Transactions</h1>
+
+<div class="row">
+    
+    <div class="col-xs-1 col-md-3"></div>
+    <div class="col-xs-10 col-md-6 ">
+    
+        <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
+
+            <div class="form-group">
+                <%= f.label :username %>
+                <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "Enter your username", class: "form-control" %>
+            </div>
+            <%= f.submit "Sign up", class: 'btn btn-success' %>
+
+        <% end %>
+
+    </div>
+    <div class="col-xs-1 col-md-3 "></div>
+
+</div>
