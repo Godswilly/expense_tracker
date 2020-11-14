@@ -1,5 +1,5 @@
 class Group < ApplicationRecord
-  belongs_to :author, class_name: 'User'
+  belongs_to :user
 
   has_many :expense_groups
 
