@@ -6,10 +6,10 @@ ruby '2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use postgresql as the database for Active Record
+gem 'hirb', '~> 0.7.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'rubocop', '~> 1.2'
-gem 'hirb', '~> 0.7.3'
-gem "twitter-bootstrap-rails"
+gem 'twitter-bootstrap-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -34,6 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+   gem 'rspec-rails', '~> 4.0.1'
 end
 
 group :development do
@@ -50,6 +51,9 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
+  gem 'rails-controller-testing'
+  gem 'rspec'
+  gem 'shoulda-matchers', '~> 4.0'
   gem 'webdrivers'
 end
 
