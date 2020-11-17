@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
     if @user.save
       session[:user_id] = @user.id
-      flash[:success] = "Welcome to Group-It #{@user.username}"
+      flash[:success] = "Welcome to Expense Tracker #{@user.username}"
       redirect_to root_path
     else
       flash.now[:error] = @user.errors.full_messages
