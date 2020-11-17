@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: expense_tracker_production
-  username: expense_tracker
-  password: <%= ENV['EXPENSE_TRACKER_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL']%> 
+  # database: expense_tracker_production
+  # username: expense_tracker
+  # password: <%= ENV['EXPENSE_TRACKER_DATABASE_PASSWORD'] %>
