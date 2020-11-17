@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class User < ApplicationRecord
   has_many :expenses, foreign_key: :user_id, dependent: :destroy
   has_many :groups, foreign_key: :user_id

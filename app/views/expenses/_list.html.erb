@@ -1,11 +1,11 @@
   <div class="row">
-    <div class="col-sm-12 transcation-total">
+    <div class="col-sm-12 transaction-total">
       <span>Total amount:</span> 
       <span>&#36;<%= obj.sum{|expense| expense.amount} %></span>
     </div>
     <% obj.each do |expense| %>
       <div class="col-sm-12 col-md-6">
-        <div class="row transcation-listing">
+        <div class="row transaction-listing">
         <%= display_image(expense)%>
           <div class="col-sm-7 grey-color">
             <p><%= expense.name %></p>

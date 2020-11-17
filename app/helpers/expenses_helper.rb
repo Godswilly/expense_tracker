@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ExpensesHelper
   def display_expenses(name, expenses)
     render partial: name, locals: { obj: expenses } if expenses
