@@ -7,12 +7,15 @@ ruby '2.7.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use postgresql as the database for Active Record
 gem 'hirb', '~> 0.7.3'
+gem 'rails-ujs'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'rubocop', '~> 1.2'
 gem 'twitter-bootstrap-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
+# Use jquery as the JavaScript library
+gem 'jquery-rails'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
