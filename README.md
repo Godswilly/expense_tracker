@@ -27,7 +27,7 @@
 
 ## Live Demo
 
-  - [Live Demo Link]()
+  - [Live Demo Link](https://expense-tracker8.herokuapp.com/)
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@
 
   - Clone repo to your local
     - git clone https://github.com/Godswilly/expense_tracker.git
-    - cd Group-it
+    - cd expense_tracker
 
   - Install gems with:
     - bundle install
