@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class ExpensesController < ApplicationController
   before_action :require_user
 

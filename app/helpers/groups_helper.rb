@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 module GroupsHelper
   def display_groups(name, groups)
     render partial: name, locals: { obj: groups } if groups

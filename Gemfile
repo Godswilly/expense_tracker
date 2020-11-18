@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -11,7 +9,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 gem 'hirb', '~> 0.7.3'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'rails-ujs'
-gem 'rubocop', '~> 1.2'
 gem 'twitter-bootstrap-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
