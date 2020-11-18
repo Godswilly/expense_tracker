@@ -37,7 +37,7 @@ RSpec.describe ExpensesController, type: :controller do
       params = {
         expense: {
           name: 'Corolla',
-          amount: 1000000,
+          amount: 1_000_000,
           group_id: 1
         }
       }

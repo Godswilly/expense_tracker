@@ -6,8 +6,8 @@ RSpec.feature 'Users', type: :feature do
   describe 'Navigation through the application pages' do
     User.create(username: 'kalu')
     Group.create(name: 'Cars', user_id: 1)
-    Expense.create(name: 'Lexus', amount: 2000000, user_id: 1)
-    Expense.create(name: 'Corolla', amount: 1000000, user_id: 1)
+    Expense.create(name: 'Lexus', amount: 2_000_000, user_id: 1)
+    Expense.create(name: 'Corolla', amount: 1_000_000, user_id: 1)
     ExpenseGroup.create(expense_id: 1, group_id: 1)
   end
 

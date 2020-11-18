@@ -15,7 +15,7 @@
   - Basic Authentication using username
   - Used RSpec as the test suit with the help of shoulda-matchers and capybara for effective testing. Unit, Functional and integration testing was done.
 
-  ![screenshot](./app/assets/images/Screenshot.png)
+  ![Screenshot](./app/assets/images/photo.png)
 
 ## Built With
   - Ruby,
