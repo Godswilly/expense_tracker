@@ -1,69 +1,68 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
- body {
-   background-color: #f1f3f2;
- }
- 
- .transaction-total {
-   display: flex;
-   justify-content: space-between;
-   background-color: #fff;
-   padding: 1.5rem;
- }
+  /*
+  * This is a manifest file that'll be compiled into application.css, which will include all the files
+  * listed below.
+  *
+  * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+  * vendor/assets/stylesheets directory can be referenced here using a relative path.
+  *
+  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+  * files in this directory. Styles in this file should be added after the last require_* statement.
+  * It is generally better to create a new file per style scope.
+  *
+  *= require_tree .
+  *= require_self
+  */
 
-   span:first-child {
-     color: base-color;
-    }
+  body {
+    background-color: #f1f3f2;
+  }
  
-   span:last-child {
-     font-weight: bold;
-    }
+  .transaction-total {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 1.5rem;
+  }
 
+  pan:first-child {
+    color: base-color;
+  }
  
- .transaction-listing {
+  span:last-child {
+    font-weight: bold;
+  }
+
+  .transaction-listing {
    background-color: #fff;
    margin: 1.5rem 0.2rem;
- }
+  }
  
- .grey-color {
+  .grey-color {
    color: #a8a8a8;
- }
+  }
  
- .blue-background {
+  .blue-background {
    background-color: #3778c2;
- }
+  }
  
- .white {
+  .white {
    color: white !important;
- }
+  }
  
- .bold {
+  .bold {
    font-weight: bold;
- }
+  }
  
- .add-btn-background {
+  .add-btn-background {
    background-color: #5fbf23;
    padding: 1.5rem;
- }
+  }
  
- .add-btn {
+  .add-btn {
    border: 1px solid white;
    padding: 1.5rem;
    color: white;
    text-decoration: none;
- }
+  }
  
