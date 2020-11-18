@@ -7,11 +7,13 @@ RSpec.describe GroupsController, type: :controller do
     it { should use_before_action(:require_user) }
     it { should use_before_action(:set_group) }
   end
-  describe 'GET #show' do
+  describe 'GET #index' do
     before do
       User.create(username: 'kalu')
       session[:user_id] = 1
+      get :index
     end
+    it { should render_template('index') }
     it { should_not render_template('show') }
   end
   describe 'GET #new' do
@@ -23,6 +25,15 @@ RSpec.describe GroupsController, type: :controller do
       User.create(username: 'kalu')
       session[:user_id] = 1
     end
-    it { should_not render_template('new') }
+    it do
+      params = {
+        group: {
+          name: 'Cars'
+        }
+      }
+      should permit(:name)
+        .for(:create, params: params)
+        .on(:group)
+    end
   end
 end

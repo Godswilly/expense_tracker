@@ -1,13 +1,13 @@
-# frozen_string_literal: true
+# # frozen_string_literal: true
 
 require 'rails_helper'
 
 RSpec.feature 'Users', type: :feature do
   describe 'Accessing Application' do
     User.create(username: 'kalu')
-    Group.create(name: 'Clothes', user_id: 1)
-    Expense.create(name: 'Sports', amount: 1500, user_id: 1)
-    Expense.create(name: 'Cars', amount: 2500, user_id: 1)
+    Group.create(name: 'Cars', user_id: 1)
+    Expense.create(name: 'Lexus', amount: 2000000, user_id: 1)
+    Expense.create(name: 'Corolla', amount: 1000000, user_id: 1)
     ExpenseGroup.create(expense_id: 1, group_id: 1)
   end
 
