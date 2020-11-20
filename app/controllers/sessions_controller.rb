@@ -1,10 +1,12 @@
 class SessionsController < ApplicationController
-  def new; end
+  def new
+    @user = User.new
+  end
 
   def create
-    @user = User.find_by(username: params[:session][:username])
+    @user = User.find_by(name: params[:session][:name])
     if @user
-      session[:user_id] = @user.id
+      session[:author_id] = @user.id
       flash[:success] = 'Successfully logged in.'
       redirect_to root_path
     else

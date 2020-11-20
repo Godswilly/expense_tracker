@@ -6,8 +6,8 @@ RSpec.describe ExpensesController, type: :controller do
   end
   describe 'GET #index' do
     before do
-      User.create(username: 'kalu')
-      session[:user_id] = 1
+      User.create(name: 'kalu')
+      session[:author_id] = 1
       get :index
     end
     it { should render_template('index') }
@@ -15,8 +15,8 @@ RSpec.describe ExpensesController, type: :controller do
   end
   describe 'GET #external' do
     before do
-      User.create(username: 'kalu')
-      session[:user_id] = 1
+      User.create(name: 'kalu')
+      session[:author_id] = 1
       get :external
     end
     it { should render_template('external') }
@@ -28,8 +28,8 @@ RSpec.describe ExpensesController, type: :controller do
   end
   describe 'Post #create' do
     before do
-      User.create(username: 'kalu')
-      session[:user_id] = 1
+      User.create(name: 'kalu')
+      session[:author_id] = 1
     end
     it do
       params = {

@@ -1,4 +1,4 @@
-<h1 class="text-center text-primary">Login to Group Our Transactions</h1>
+<h1 class="text-center text-primary">Login to Expense Tracker</h1>
 <div class="row">
     
     <div class="col-xs-1 col-md-3"></div>
@@ -7,8 +7,8 @@
         <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
 
             <div class="form-group">
-                <%= f.label :username %>
-                <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "Enter your username", class: "form-control" %>
+                <%= f.label :name %>
+                <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Enter your name", class: "form-control" %>
             </div>
             <%= f.submit "Log in", class: 'btn btn-success' %>
 

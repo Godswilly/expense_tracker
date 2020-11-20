@@ -1,5 +1,4 @@
-
-<h1 class="text-center text-primary">Sign up for Group Our Transactions</h1>
+<h1 class="text-center">Signup for Expense Tracker</h1>
 
 <div class="row">
     
@@ -9,8 +8,8 @@
         <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
 
             <div class="form-group">
-                <%= f.label :username %>
-                <%= f.text_field :username, autofocus: true, autocomplete: "username", placeholder: "Enter your username", class: "form-control" %>
+                <%= f.label :name %>
+                <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Enter your name", class: "form-control" %>
             </div>
             <%= f.submit "Sign up", class: 'btn btn-success' %>
 

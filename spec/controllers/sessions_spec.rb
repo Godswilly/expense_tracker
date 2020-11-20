@@ -8,8 +8,8 @@ RSpec.describe SessionsController, type: :controller do
   end
   describe 'Post #create' do
     before do
-      User.create(username: 'kalu')
-      @user = User.find_by(username: 'kalusha')
+      User.create(name: 'kalu')
+      @user = User.find_by(name: 'kalusha')
     end
     it { should_not render_template('new') }
   end

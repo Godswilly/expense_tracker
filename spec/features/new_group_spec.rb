@@ -2,11 +2,11 @@ require 'rails_helper'
 
 RSpec.feature 'Users', type: :feature do
   describe 'Creating New groups and expenses' do
-    User.create(username: 'kalu')
+    User.create(name: 'kalu')
   end
   scenario 'user opens Create New Group page' do
     visit '/login'
-    fill_in 'Username', with: 'kalu'
+    fill_in 'Name', with: 'kalu'
     click_button 'Log in'
     click_link 'My Groups'
     click_link 'CREATE A NEW GROUP'
@@ -19,7 +19,7 @@ RSpec.feature 'Users', type: :feature do
 
   scenario 'user opens Create New Expense page' do
     visit '/login'
-    fill_in 'Username', with: 'kalu'
+    fill_in 'Name', with: 'kalu'
     click_button 'Log in'
     click_link 'My Expenses'
     click_link 'ADD NEW EXPENSE'

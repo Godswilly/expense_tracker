@@ -65,3 +65,11 @@ span:last-child {
   color: white;
   text-decoration: none;
 }
+
+.space {
+  margin-top: 0.5rem;
+}
+
+.spacer {
+  margin-top: 1.7rem;
+}

@@ -9,7 +9,7 @@
         <%= display_image(expense)%>
           <div class="col-sm-7 grey-color">
             <p><%= expense.name %></p>
-            <p><%= expense.created_at.day %>-<%= expense.created_at.month %>-<%= expense.created_at.year %> by <%= expense.user.username %></p>
+            <p><%= expense.created_at.day %>-<%= expense.created_at.month %>-<%= expense.created_at.year %> by <%= expense.author.name %></p>
           </div>
           <div class="col-sm-3 bold">&#36;<%= expense.amount %></div>
         </div>
