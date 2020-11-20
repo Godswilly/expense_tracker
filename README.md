@@ -27,7 +27,7 @@
 
 ## Live Demo
 
-  - [Live Demo Link](https://expense-tracker8.herokuapp.com/)
+  - [Live Demo Link](https://expense-tracker10.herokuapp.com/)
 
 ### Prerequisites
 
