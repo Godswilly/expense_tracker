@@ -10,6 +10,5 @@ class Group < ApplicationRecord
   validates :name, presence: true
   validates :image, presence: true, content_type: ['image/png', 'image/jpg', 'image/jpeg']
 
-
   scope :asc, -> { order('name ASC') }
 end
