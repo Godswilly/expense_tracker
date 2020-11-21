@@ -13,7 +13,7 @@ class ExpensesController < ApplicationController
     return if current_user.expenses.size.zero?
 
     @expenses = current_user.expenses.includes(%i[groups author]).select do |expense|
-      expense.groups.exists? && expense.user.id == session[:author_id]
+      expense.groups.exists? && expense.author.id == session[:author_id]
     end
   end
 
