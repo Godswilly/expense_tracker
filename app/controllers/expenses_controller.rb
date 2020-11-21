@@ -4,13 +4,17 @@ class ExpensesController < ApplicationController
   def index
     return if current_user.expenses.size.zero?
 
-    @expenses = current_user.expenses.desc.select { |expense| expense.groups.exists? }
+    redirect_to root_path if session[:author_id].nil?
+    @expenses = current_user.expenses.where(author_id: session[:author_id]).includes(groups: [image_attachment: :blob])
+    @expenses = @expenses.filter { |expense| !expense.groups.empty? }
   end
 
   def external
     return if current_user.expenses.size.zero?
 
-    @expenses = current_user.expenses.desc.reject { |expense| expense.groups.exists? }
+    @expenses = current_user.expenses.includes(%i[groups author]).select do |expense|
+      expense.groups.exists? && expense.user.id == session[:author_id]
+    end
   end
 
   def new
