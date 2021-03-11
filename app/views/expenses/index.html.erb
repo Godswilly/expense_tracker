@@ -1,0 +1,7 @@
+<% content_for(:title, "My Expenses") %>
+
+<%= display_expenses('list',@expenses)  %>
+
+<div class="row add-btn-background">
+    <%= link_to 'ADD NEW EXPENSE', new_expense_path, :class=>"col-sm-12 text-center add-btn" %>
+</div>

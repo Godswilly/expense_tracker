@@ -1,0 +1,20 @@
+<h1 class="text-center text-primary">Login to Expense Tracker</h1>
+<div class="row">
+    
+    <div class="col-xs-1 col-md-3"></div>
+    <div class="col-xs-10 col-md-6 ">
+    
+        <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+
+            <div class="form-group">
+                <%= f.label :name %>
+                <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Enter your name", class: "form-control" %>
+            </div>
+            <%= f.submit "Log in", class: 'btn btn-success' %>
+
+        <% end %>
+
+    </div>
+    <div class="col-xs-1 col-md-3 "></div>
+
+</div>
